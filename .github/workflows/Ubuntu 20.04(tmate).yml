@@ -1,17 +1,20 @@
 # https://github.com/P3TERX/ActionsVM
 
-name: Ubuntu 18.04(tmate)
+name: Ubuntu 20.04(tmate)
 
 on:
   workflow_dispatch:
 
 jobs:
   Instance:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
 
     steps:
     - name: Checkout
       uses: actions/checkout@main
+
+    - name: "Cleanup Environment"
+      uses: rokibhasansagar/slimhub_actions@main
 
     - name: Run Start Script
       run: source ubuntu-start.sh
