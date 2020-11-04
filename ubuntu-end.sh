@@ -1,6 +1,6 @@
 # This script runs after SSH in Ubuntu instances
 # Pack and upload files
-if [ ! -f ~/build/output/compile.log ] || [ -f /tmp/stop ] ; then
+if [ ! -f ~/build/compile.log ] || [ -f /tmp/stop ] ; then
 printf "No file uploads. Skipping"
 else
 cd ~/build
