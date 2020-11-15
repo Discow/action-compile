@@ -4,7 +4,7 @@ if [ ! -f ~/build/compile.log ] || [ -f /tmp/stop ] ; then
 printf "No file uploads. Skipping"
 else
 cd ~/build
-tar -cvf output.tar output
+sudo tar -cvpf output.tar output
 xz output.tar
 sha1sum output.tar.xz
 sha1sum compile.log
