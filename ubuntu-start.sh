@@ -7,9 +7,9 @@ sudo timedatectl set-timezone "Asia/Shanghai"
 
 # Clean up
 docker rmi `docker images -q`
-sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php
 sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* mysql* php*
 sudo -E apt-get -y autoremove --purge
+sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php
 sudo -E apt-get clean
 
 # Install the tools you need to use
