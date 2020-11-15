@@ -1,6 +1,6 @@
 # https://github.com/P3TERX/ActionsVM
 
-name: Ubuntu (tmate)
+name: Ubuntu 18.04(tmate)
 
 on:
   workflow_dispatch:
