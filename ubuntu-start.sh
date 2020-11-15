@@ -6,6 +6,7 @@
 sudo timedatectl set-timezone "Asia/Shanghai"
 
 # Clean up
+sudo -E apt-get update
 docker rmi `docker images -q`
 sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* mysql* php*
 sudo -E apt-get -y autoremove --purge
