@@ -13,8 +13,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
 
-    - name: "Cleanup Environment"
-      uses: rokibhasansagar/slimhub_actions@main
+#    - name: "Cleanup Environment"
+#      uses: rokibhasansagar/slimhub_actions@main
 
     - name: Run Start Script
       run: source ubuntu-start.sh
